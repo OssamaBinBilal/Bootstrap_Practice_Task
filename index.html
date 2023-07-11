@@ -1,13 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
-    This is an html document
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Tralive</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-5">
+      <a class="navbar-brand" href="#"><img src="./static/nav-logo.png" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto d-flex align-items-center">
+          <li class="nav-item active mx-2">
+            <a
+              class="nav-link font-weight-bold text-dark-blue custom-nav"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item active mx-2">
+            <a class="nav-link font-weight-bold custom-nav" href="#">Events</a>
+          </li>
+          <li class="nav-item active mx-2">
+            <a class="nav-link font-weight-bold custom-nav" href="#">About</a>
+          </li>
+          <li class="nav-item active mx-2">
+            <a class="nav-link font-weight-bold custom-nav" href="#">Blog</a>
+          </li>
+          <li class="nav-item active mx-2">
+            <a class="nav-link font-weight-bold custom-nav" href="#">Contact</a>
+          </li>
+          <li class="nav-item active mx-2">
+            <button
+              type="button"
+              class="btn btn-warning px-5 py-3 text-white font-weight-bold"
+            >
+              +10 (67) 678 2567
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-area py-5">
+      <div class="hero-top">
+        <h1
+          class="text-center text-dark-blue font-weight-bold custom-hero-title"
+        >
+          Lifelong memories just a <br />
+          <span class="underline-yellow">few seconds away</span>
+        </h1>
+        <p class="text-center my-4 text-dark-blue hero-description">
+          Let's start your journey with us, your dream will come true
+        </p>
+        <div class="d-flex justify-content-center">
+          <button
+            type="button"
+            class="btn text-white font-weight-bold custom-hero-btn px-5 py-3"
+          >
+            Explore Destinations
+          </button>
+        </div>
+      </div>
+      <div class="hero-bottom d-flex justify-content-center py-5 my-5">
+        <img class="hero-car-img" src="./static/hero-car.png" />
+      </div>
+    </div>
+
+    <div class="events">
+      <div class="events-content">
+        <p
+          class="text-center text-lavender font-weight-bold"
+          style="font-size: 1rem"
+        >
+          Check Our Best Promotional Tour
+        </p>
+        <h1
+          class="text-center font-weight-bold text-dark-blue"
+          style="font-size: 3vw"
+        >
+          Upcoming Events
+        </h1>
+      </div>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg my5">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./static//card1-img.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg my5">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./static//card2-img.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <div class="card-body-upper d-flex justify-content-center">
+                  <p class="card-title" style="font-size: 20px">Mega Turkey</p>
+                  <p class="card-price ml-auto">$1200</p>
+                </div>
+                <div class="card-body-lower"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg my5">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./static//card3-img.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section
+      class="about d-flex align-items-center justify-content-center py-5 flex-column flex-lg-row"
+    >
+      <div class="about-left-col mx-5">
+        <img src="./static/about-image.png" class="w-100" />
+      </div>
+      <div class="about-right-col w-50 mx-5">
+        <span class="text-lavender font-weight-bold">About Us</span>
+        <h1>Get ready for the real time adventure</h1>
+        <p>
+          Let's start journey with us, your dream will come true. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Officia, quia accusantium
+          esse voluptas dicta minima nemo et sapiente eius asperiores. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptatem!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          numquam.
+        </p>
+      </div>
+    </section>
+
+    <div
+      class="section customer-feedback py-5"
+      style="background-color: #929cda"
+    >
+      <div class="w-50 mx-auto">
+        <div class="feedback-row text-white">
+          <h1 class="text-center my-5" style="font-size: 5vw">
+            What customers say
+          </h1>
+          <p class="text-center" style="line-height: 1.5; font-size: 20px">
+            Let's start journey with us, your dream will come true. Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Iste quas illum soluta
+            sequi. Ipsa deleniti itaque dolorum id sint iure, eos, laboriosam,
+            repellendus natus praesentium et eligendi! Sunt, placeat? Iusto
+            veritatis eveniet est eaque ex totam, recusandae explicabo libero,
+            molestias illo sed. Nihil quisquam iste blanditiis amet quia vero
+            officia!
+          </p>
+          <div
+            class="founder d-flex justify-content-center flex-column align-items-center my-5"
+          >
+            <img src="./static/founder.png" style="width: 100px" />
+            <div>
+              <h3 class="m-0 text-center">Mark Anthony</h3>
+              <span>CEO of Colorib</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid px-5 py-5">
+      <div
+        class="video-player d-flex align-items-center justify-content-center"
+      >
+        <i class="fa-solid fa-circle-play"></i>
+        <p class="text-white font-weight-bold" style="font-size: 3.5vw">
+          Watch our last tour
+        </p>
+      </div>
+    </div>
+
+    <section class="gallery bg-danger">
+      <div class="gallery-imgs overflow-hidden bg-dark d-flex">
+        <img src="./static/insta1.png" />
+        <img src="./static/insta2.png" />
+        <img class="overflow-hidden" src="./static/insta3.png" />
+        <img class="overflow-hidden" src="./static/insta4.png" />
+        <img class="overflow-hidden" src="./static/insta5.png" />
+      </div>
+    </section>
+
+    <footer class="px-5 pt-5 pb-3 footer-custom">
+      <div class="row mt-5">
+        <div class="footer-about col-lg">
+          <img src="./static/logo-white.png" alt="" />
+          <p class="text-raven mt-4" style="font-size: 20px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            totam rerum soluta eligendi aliquam ex debitis voluptates nihil
+            magnam mollitia.
+          </p>
+          <div class="social-icons">
+            <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-pinterest-square fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="footer-navigation col-lg ml-lg-5">
+          <h1 class="text-white font-weight-bold" style="font-size: 1.5rem">
+            Navigation
+          </h1>
+          <ul class="list-unstyled">
+            <li
+              class="text-raven my-2"
+              style="line-height: 2rem; font-size: 20px"
+            >
+              Home
+            </li>
+            <li
+              class="text-raven my-2"
+              style="line-height: 2rem; font-size: 20px"
+            >
+              About
+            </li>
+            <li
+              class="text-raven my-2"
+              style="line-height: 2rem; font-size: 20px"
+            >
+              Services
+            </li>
+            <li
+              class="text-raven my-2"
+              style="line-height: 2rem; font-size: 20px"
+            >
+              Blog
+            </li>
+            <li
+              class="text-raven my-2"
+              style="line-height: 2rem; font-size: 20px"
+            >
+              Contact
+            </li>
+          </ul>
+        </div>
+        <div class="footer-services col-lg">
+          <h1 class="text-white font-weight-bold" style="font-size: 1.5rem">
+            Services
+          </h1>
+          <ul class="list-unstyled">
+            <li
+              class="text-raven my-2"
+              style="line-height: 2rem; font-size: 20px"
+            >
+              Blackforest
+            </li>
+            <li
+              class="text-raven my-2"
+              style="line-height: 2rem; font-size: 20px"
+            >
+              Bodhun
+            </li>
+            <li
+              class="text-raven my-2"
+              style="line-height: 2rem; font-size: 20px"
+            >
+              Rongdhonu
+            </li>
+            <li
+              class="text-raven my-2"
+              style="line-height: 2rem; font-size: 20px"
+            >
+              Meghrong
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact col-lg">
+          <h1 class="text-white font-weight-bold" style="font-size: 1.5rem">
+            Contact Us
+          </h1>
+          <ul class="list-unstyled">
+            <li class="text-raven" style="line-height: 2rem; font-size: 20px">
+              76/A, Green Lane, Dhanmondi, NYC
+            </li>
+            <li class="text-raven" style="line-height: 2rem; font-size: 20px">
+              demomail89@gmail.com
+            </li>
+          </ul>
+          <span class="text-warning" style="line-height: 2rem; font-size: 20px"
+            >+10 (78) 738-9083
+          </span>
+        </div>
+      </div>
+      <div class="footer-row-2 mt-5">
+        <p class="text-raven text-center">
+          Copyright © 2021 All rights reserved | This template is made with
+          <i class="fas fa-heart" aria-hidden="true"></i> by
+          <span class="text-warning">Colorlib</span>
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,3 +1,71 @@
 * {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-bottom {
+  background-image: url("./static/h1_hero1.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.video-player {
+  background: url("./static/video-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  padding: 10rem;
+}
+
+.gallery-imgs > * {
+  width: 20%;
+}
+
+.custom-nav {
+  font-size: 18px;
+}
+
+.custom-hero-title {
+  font-size: 3vw;
+}
+
+.custom-hero-btn {
+  background-image: linear-gradient(180deg, #0a2a5d, #0a0d24);
+}
+
+.hero-car-img {
+  max-width: 100%;
+}
+
+.text-dark-blue {
+  color: #0a2b5e;
+}
+
+.bg-dark-blue {
+  background-color: #0a2b5e;
+}
+
+.text-lavender {
+  color: #9ca9fc;
+}
+
+.navbar-nav > .nav-item > a:hover {
+  color: red;
+}
+
+.text-raven {
+  color: #707297;
+}
+
+.underline-yellow {
+  border-bottom: 8px solid yellow;
+}
+
+.hero-description {
+  font-size: 20px;
+}
+
+.footer-custom {
+  background-image: linear-gradient(150deg, #0a2a5d, #0a0d24);
 }
