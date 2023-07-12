@@ -21,6 +21,10 @@
   width: 20%;
 }
 
+.custom-nav:hover {
+  color: yellow !important;
+}
+
 .custom-nav {
   font-size: 18px;
 }
